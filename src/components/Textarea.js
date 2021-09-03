@@ -26,7 +26,7 @@ export default function Textarea(props) {
   const handleExtraSpace = () => {
     let newText = text.split(/[ ]+/);
     setText(newText.join(' '));
-    props.showAlert("Extra space deleted!", "success");
+    props.showAlert("Extra space deleted.", "success");
   }
 
   const handleOnChange = (event) => {
